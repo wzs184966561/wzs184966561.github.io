@@ -86,7 +86,7 @@
             },
             draw:function(){
             if(this.y<this.height){
-                cxt.fillStyle="rgba(0,0,0,0.035)";
+                cxt.fillStyle="rgba(0,0,0,0.03)";
                 cxt.fillRect(0,0,w,h);
                 cxt.fillStyle=this.color;
                 cxt.fillRect(this.x,this.y,this.w,this.h);
@@ -132,7 +132,7 @@
                   },time*i)
             }
         }
-        creatRain(50,200);
+        creatRain(30,100);
   
         setInterval(function(){
             for(var item of oRain){
