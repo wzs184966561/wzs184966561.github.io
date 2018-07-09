@@ -3,6 +3,7 @@ $(function(){
     var tx_p=text_p[0];
     var textinput="我的电竞日记将会上传到这个博客，记中情节，大部分属实，如有雷同......算李刘辟。"
     var count=0;
+    var inptxt;
     function txinput(){
         if(count<=textinput.length){
             tx_p.innerHTML=textinput.substring(0,count);
@@ -14,7 +15,7 @@ $(function(){
     setTimeout(function(){
       $(".loading").fadeOut();
       $(".teji").animate({opacity:'1'},"slow");
-      var inptxt=setInterval(txinput,100);
+    inptxt=setInterval(txinput,100);
     },1000)
 
   });
