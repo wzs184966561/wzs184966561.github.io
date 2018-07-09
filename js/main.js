@@ -12,7 +12,7 @@ $(function(){
         }
     }
     setTimeout(function(){
-      $(".loading").hide();
+      $(".loading").fadeOut();
       $(".teji").animate({opacity:'1'},"slow");
       var inptxt=setInterval(txinput,100);
     },1000)
