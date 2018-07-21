@@ -96,7 +96,9 @@ var oneStep = function(i,j,me){
     var gradient=context.createRadialGradient(15+i*30+2,15+j*30-2,13,15+i*30+2,15+j*30-2,0);
     if(me){
         gradient.addColorStop(0,"#0A0A0A");
+        // gradient.addColorStop(0,"#abf5c8");
         gradient.addColorStop(1,"#636766");
+        // gradient.addColorStop(1,"#07f361");
     }else{
         gradient.addColorStop(0,"#d1d1d1");
         gradient.addColorStop(1,"#f9f9f9");
@@ -124,7 +126,10 @@ wuziqi.onclick=function(e){
                 computerWin[k]=6;
                 if(playerWin[k]==5){
                     over=true;
-                    window.alert("玩的好呀。");
+                    setTimeout(function(){
+                        window.alert("玩的好呀。");
+                    },200);
+                 
                     
                 }
             }
@@ -172,7 +177,7 @@ var computerAI = function(){
                         }else if(computerWin[k]==2){
                             computerScore[i][j]+=440;
                         }else if(computerWin[k]==3){
-                            computerScore[i][j]+=2100;
+                            computerScore[i][j]+=2500;
                         }else if(computerWin[k]==4){
                             computerScore[i][j]+=20000;
                         }
@@ -209,7 +214,10 @@ var computerAI = function(){
                     computerWin[k]++;
                     if(computerWin[k]==5){
                         over=true;
-                        window.alert("电脑都下不过如何和我同台竞技？");
+                        setTimeout(function(){
+                            window.alert("电脑都下不过如何和我同台竞技？");
+                        },200);
+                        
                         
                     }
                     
