@@ -1,0 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#wuziqi{
+    display: block;
+    margin:100px auto;
+    box-shadow: -5px -5px 5px #efefef,5px 5px 5px #0f0f0f;
+}
